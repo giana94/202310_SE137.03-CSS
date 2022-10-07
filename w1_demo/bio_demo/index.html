@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Giana Hardin">
+    <meta name="description" content="W3 Bio Assignment">
+    <title>W3 | Bio</title>
+
+    <!--Giana Hardin; SE111_202240; 08/11/2022-->
+
+    <!--IN DOCUMENT STYLING-->
+    <style>
+        /*in here we write CSS*/
+
+        /*Basic CSS Set-up:
+
+            selector {
+                property:value;
+            }
+
+        VALID SELECTORS: tag type (body, h1, img), id names (#wrapper, #header, #footer), class names (.bg-main.img-special, .titles)
+        */
+
+
+        .parallax {
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        body {
+            background-image: url("../w3-bio/images/sunrise2.JPG");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        div {/*all divs on page*/
+            border:2px solid darkslategrey;
+            border-style: double;
+            margin:10px;/*space outside/between elements (top, right, bottom, left)*/
+            padding:10px;/*space inside element between border & content (top, right, bottom, left)*/
+        }
+
+        #wrapper {
+            text-align: left;
+            width:900px;
+            margin:auto;/*center right and left sides*/
+            background-color:hsl(0, 0%, 83%,.5);
+            border: 0ch;
+            border-radius: 25px;
+            padding: 20px;
+            background-origin: content-box;
+            box-shadow: hsl(0, 0%, 0%, .5) 2px 2px 4px 4px;
+        }
+
+        #header {
+            text-align:center;
+            font-size: 30px;
+            font-family: "Helvetica";
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 10px;
+            padding: 10px;
+            border: 0ch;
+        }
+
+        #nav {
+            text-align: center;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+            background-color: rgb(236, 130, 85, .5);
+            border: 0ch;
+            border-radius: 25px;
+            box-shadow: gray 2px 2px 4px 4px;
+            padding: 20px;
+        }
+
+        #about-me {
+            border: 0ch;
+            border-radius: 25px;
+            padding: 20px;
+            font-size: x-large;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        #bio {
+            border: 1px double rgb(236, 130, 85, .5);
+            border-radius: 25px;
+            padding: 15px;
+            font-size: 20px;
+            font-family: "georgia";
+            box-shadow: hsl(0, 0%, 0%, .2) 2px 2px 4px 4px;
+        }
+
+        img {
+        border-radius: 8px;
+        box-shadow: gray 2px 2px 4px 4px;
+        }
+
+        a {
+            width: 150px;
+            text-align: center
+        }
+
+        a:hover {
+            background-color: gray;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); 
+            border: none;
+            border-radius: 25px;
+            color: white;
+            padding: 7px 14px;
+            text-align: center;
+            text-decoration-line: underline;
+            display: inline-block;
+            font-size: 20px;
+            margin: 2px 4px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+        }
+
+        #clear {
+            text-align:center;
+            border:0ch;
+            font-size: larger;
+        }
+
+        #footer {/*only applies to the element with an ID of 'footer'*/
+        text-align:center;
+        font-size: larger;
+        border: 0ch;
+        border-radius: 25px;
+        padding: 20px;
+        }
+
+    </style>
+
+</head>
+
+
+<!--this is where content goes-->
+<body class="parallax">
+
+    <div id="wrapper"><!--holds all page content-->
+
+        <div id="header">
+            <h1>Giana Hardin</h1>
+
+        </div><!--#header-->
+
+
+        <div id="nav">
+            
+            <!--link to the index and characters pages-->
+            <!--In addition, use a fragment to link to the footer of the Character's page-->
+            <a href="../w3-bio/index.html">HOME</a> | <a href="../w3-bio/schools.html">SCHOOLING</a> | <a href="../w3-bio/hobbies.html">HOBBIES</a>
+        <br>
+        </div><!--/ #nav-->
+
+
+
+        <!--BIO / ABOUT ME--------------------------------------------------------->
+        <div style="text-align:center"id="about-me">
+            <h2 style="text-align:center">About Me</h2>
+        </div><!--/#about-me-->
+
+        
+        <div id="bio">
+            
+                <p style="float: right; width:350px">Hello! Welcome to my first webpage! Here is a little about myself! My name is Giana, I am from Woonsocket, RI. I have traveled to many places which include 19 different countires. My <strong>favorite</strong> was Greece! I try to view the world with <i>iridescent</i> lenses: seeing the <u>beauty</u> in everything. I use my innovative mind to create art such as designing and a bit of modeling. I am an introvert at times but, I am connected to many people through my <b>Navy</b> experiences. I also love <em>comedy</em>. I'm just here for a good time and some good laughs!</p>
+                <img style="float: left" src="../w2-bio/images/utah sunset 2020.jpg" alt="Random picture of me lol" width="350px">
+            
+            <br>
+            <div id="clear" style="clear:both">
+                <a href="https://www.instagram.com/gianaahardin/"target="_blank">IG Account</a>
+            </div>
+        </div><!--/ #bio-->
+
+        <br>
+            
+            
+        
+
+
+        <hr>
+            <!--FOOTER------------------------------------------------------------------->
+            <div id="footer"><!--class="bg-main"-->
+                
+                <p>&copy; 2022 | SE111.02 | Giana H 🤙</p>
+                <br>
+                <!--link to the header tag-->
+                <a href="#header">back to top</a>
+            </div><!--/ #footer-->
+
+            <br>
+
+
+    </div>
+</body>
+</html>
