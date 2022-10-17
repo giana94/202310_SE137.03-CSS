@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Giana Hardin">
+    <meta name="description" content="W2 Bio Assignment">
+    <title>W2 | Assignment</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="parallax">
+    <h1 id="header">Giana Hardin</h1>
+    <hr>
+
+    <div id="nav">
+        <a href="#">Bio</a>
+        <a href="#">Eduacation</a>
+        <a href="#">Hobbies</a>
+    </div>
+
+    <hr>
+
+    <div id="main">
+        <hr>
+
+        <div id="bio">
+            <h2>My Bio</h2>
+            <img src="images/Providence.jpg" alt="Me in Providence" width="250px">
+            <p>Hello! My name is Giana. I was born and raised in Woonsocket, RI. After I graduated from high school, I joined the Navy. I served active duty for 8 years as a Gas Turbines Systems Mechanic. I love working with my hands and problem solving. Unfortunately, my knees and back took a hard toll from working in a physically strenuous environment. I also enjoyed learning about different technologies and decided to pursue a Software Engineering degree.</p>
+            <p>My goals are to finish school and continue traveling the world. During my time in the Navy, I have visited 18-19 countries and a few States here in the US.  The experiences I've endured were life changing. I have become more patient with everything I do, and I try to look at every situation from different perspectives. I love to laugh and at times, my intrusive thoughts are hilarious. I believe there is a meme for everything!</p>
+            <hr>
+        </div>
+
+        <div id="ed" class="hide">
+            <h2>Schooling</h2>
+            <ul>
+                <li><a href="https://www.neit.edu/"target="_blank">New England Technical Institue of Technology</a><i>, SE; Current</i></li>
+                <li>ECPI University<i>, MET; Some College</i></li>
+                <li>Woonsocket High School, </a><i>HS Diploma</i></li>
+            </ul>
+            <hr>
+        </div>
+
+        <div id="hobbies" class="hide">
+            <h2>Hobbies</h2>
+            <ol>
+                <li>Listening to Music & Dancing</li>
+                <li><b>Traveling</b></li>
+                <li>Sharing Memes</li>
+            </ol>
+            <img src="images/laughing.webp" alt="Sharing Memes and Laughing!!!!">
+            <p><em>Who doesnt love comedy!?</em></p>
+            <hr>
+        </div>
+
+        <div id="footer">
+            <p>&copy;2022 Giana Hardin | W1 Assignment</p>
+            <a href="#header">back to top</a>
+        </div>
+
+    </div>
+
+    <script>
+        var bio = document.querySelector(`#bio`);
+        var ed = document.querySelector(`#ed`);
+        var hobbies = document.querySelector(`#hobbies`);
+
+        var links = document.querySelectorAll(`a`);
+
+        document.addEventListener(`click`, function(e){
+        
+
+            links[0].addEventListener(`click`, function(e){e.preventDefault();show(bio)});
+            links[1].addEventListener(`click`, function(e){e.preventDefault();show(ed)});
+            links[2].addEventListener(`click`, function(e){e.preventDefault();show(hobbies)});
+        })
+
+        function show(me, all=false)
+        {
+            bio.classList.add(`hide`);
+            ed.classList.add(`hide`);
+            hobbies.classList.add(`hide`);
+
+            if(all === true){
+                bio.classList.remove(`hide`);
+                ed.classList.remove(`hide`);
+                hobbies.classList.remove(`hide`);
+
+                return
+            }
+
+            me.classList.remove(`hide`);
+        }
+
+        
+    </script>
+
+</body>
+</html>

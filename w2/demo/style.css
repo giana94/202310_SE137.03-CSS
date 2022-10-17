@@ -1,0 +1,76 @@
+@charset "UTF-8";
+html{height:100%}
+body{
+    height: 100%;
+    color: red;
+    background-color: black;
+    background-image:url(https://www.millersguild.com/wp-content/uploads/2022/01/Spiritual-Meaning-of-Butterflies.jpg);
+    background-repeat: no-repeat;
+    background-position: -150px 100px;
+    background-size: 100%;
+    font-family: Arial, Verdana, sans-serif;
+    /*text-decoration: underline;
+    font-style: italic;*/
+}
+/*#container{
+    //display:none;
+}*/
+p{
+    color: green;
+}
+
+#nav{
+    background-color: #ccc;
+}
+
+.module
+{
+    background-color: #eee;
+    box-shadow:10px 10px 10px black;
+}
+
+.left p{
+    color: purple;
+}
+
+.right h2 {
+    color: brown;
+}
+
+.left h2 span{
+    text-decoration: underline;
+}
+
+h1, #footer
+{
+    background-color: yellow;
+}
+
+#nav a{
+    font-size: 32px;
+    background-image: url(https://images.pexels.com/photos/2832432/pexels-photo-2832432.png?cs=srgb&dl=pexels-anni-roenkae-2832432.jpg&fm=jpg);
+    display:inline-block;
+    padding:100px;
+    border-radius: 116px;
+}
+/*PSEUDOCLASSES*/
+#nav a:link, #nav a:visited, #nav a:active
+{
+    color: black;
+    transition: all 1s;
+}
+
+#nav a:hover{
+    color: red;
+    background-position-x: -150px;
+    transition: all 1s;
+}
+
+#nav{
+    text-align: center;
+}
+/*you can add hovers to anything. not just links
+h1:hover
+{
+    color: green;
+}*/
