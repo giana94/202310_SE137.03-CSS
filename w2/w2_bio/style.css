@@ -1,20 +1,23 @@
 @charset "UTF-8";
 
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
 
 .parallax {
     /*Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /*background-repeat: no-repeat;
+    background-size: cover;*/
 }
 
 body {
     /*background-image: url("images/green_leaves.jpg");*/
-    background-color: rgb(234, 233, 233);
+    /*background-color: rgb(234, 233, 233);*/
+    /*background-color: rgba(235, 235, 235, 0.171);*/
+    background-color: #5557572d;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width:900px;
+    /*background-size: 100% 100%;*/
+    width:90%;
     margin:auto;/*center right and left sides*/
     /*background-color:hsl(0, 0%, 83%,.1);*/
     border-radius: 10px;
@@ -32,39 +35,51 @@ body {
 
 #header{
     color: #000b0b;
+    padding: 2px 2x;
     text-align: center;
+    font-family: 'Tangerine', serif;
+    font-size: 55px;
+    text-shadow: 4px 4px 4px rgb(119, 138, 135);
 }
 
 h2{
-    color: #5e281e;
+    color: rgb(88,17,26);
+    color: linear-gradient(0deg, rgba(88,17,26,1) 0%, rgba(45,6,11,1) 20%, rgba(129,41,52,1) 96%);
+    font-family: 'Tangerine', serif;
+    font-size: 30px;
+    text-shadow: 4px 4px 4px rgb(119, 138, 135);
 }
 
 div{
-    color:rgb(0, 0, 0);
-    background-color: rgba(80, 75, 75, 0.325);
+    background-color:#aaaeae;
+    padding: 10px;
+    border-radius: 10px;
+    
 }
 
 i{
-    color: #011a1a;
+    color: #052828;
 }
 
 a{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family: monospace;
-    font: kerning 5px;
+    display: inline-block;
 }
 
-a:hover{
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    /*padding: 5px 10px;
-    text-align: center;*/
-    display: inline-block;
-    font-size: 15px;
-    transition-duration: 0.4s;
-    }
+a:visited{
+    color:rgb(119, 138, 135);
+}
 
+
+a:hover{
+    color: #967872;
+    /*padding: 4px 8px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;*/
+    transition-duration: 0.7s;
+    }
 
 
 .hide{
@@ -74,10 +89,9 @@ a:hover{
 #nav {
     text-align: center;
     font-size: 15px;
-    background-color:#031819c7;
-    border-radius: 5px;
-    box-shadow: hsl(0, 0%, 0%, .5) 2px 2px 4px 4px;
-    padding: 20px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.9612438725490196) 0%, rgba(15,47,46,1) 30%, rgba(3,19,15,1) 100%);
+    padding: 20px 20px;
 }
 
 img {
@@ -87,9 +101,9 @@ img {
 
 #footer {/*only applies to the element with an ID of 'footer'*/
     text-align:center;
-    font-size: larger;
+    font-size: 16px;
     border-radius: 5px;
-    padding: 20px;
-    background-color:#0318193e;
+    padding: 10px;
+    /*background-color:#55575756;*/
     }
 
