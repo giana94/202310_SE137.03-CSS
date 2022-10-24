@@ -3,27 +3,18 @@
 @import url("https://fonts.googleapis.com/css?family=Tangerine");
 
 .parallax {
-    /*Create the parallax scrolling effect */
+    /*Create the parallax scrolling effect***/
     background-attachment: fixed;
     background-position: center;
-    /*background-repeat: no-repeat;
-    background-size: cover;*/
+    background-repeat: no-repeat;
+    background-color: #a9b1a9;
 }
 
 body {
-    /*background-image: url("images/green_leaves.jpg");*/
-    /*background-color: rgb(234, 233, 233);*/
-    /*background-color: rgba(235, 235, 235, 0.171);*/
-    background-color: #5557572d;
-    background-repeat: no-repeat;
-    /*background-size: 100% 100%;*/
+    background: rgb(107, 110, 104);
     width:90%;
     margin:auto;/*center right and left sides*/
-    /*background-color:hsl(0, 0%, 83%,.1);*/
     border-radius: 10px;
-    padding: 20px;
-    background-origin: content-box;
-    box-shadow: hsl(0, 0%, 0%, .5) 2px 2px 4px 4px;
     text-align:center;
 }
 
@@ -32,55 +23,67 @@ body {
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-
 #header{
     color: #000b0b;
-    padding: 2px 2x;
     text-align: center;
     font-family: 'Tangerine', serif;
-    font-size: 55px;
+    font-size: 60px;
+    padding-top: 20px;
     text-shadow: 4px 4px 4px rgb(119, 138, 135);
+}
+
+#header:hover{
+    font-size: 61px;
+    transition: 4s;
 }
 
 h2{
     color: rgb(88,17,26);
     color: linear-gradient(0deg, rgba(88,17,26,1) 0%, rgba(45,6,11,1) 20%, rgba(129,41,52,1) 96%);
     font-family: 'Tangerine', serif;
-    font-size: 30px;
+    font-size: 40px;
     text-shadow: 4px 4px 4px rgb(119, 138, 135);
 }
 
-div{
-    background-color:#aaaeae;
+#main{
+    background-color:#dfe2e0;
+    border-radius: 10px 10px 10px 10px;
     padding: 10px;
-    border-radius: 10px;
-    
+    box-shadow: hsl(0, 0%, 0%, .5) 2px 2px 4px 4px;
 }
 
 i{
-    color: #052828;
+    color: #034242;
 }
 
-a{
-    color: rgb(255, 255, 255);
+a {
+    color: #ac7165;
     font-family: monospace;
     display: inline-block;
+    padding: 2px;
+    text-decoration: none;
 }
 
-a:visited{
-    color:rgb(119, 138, 135);
+#ed a{
+    color:#734b44;
+}
+#ed a:hover{
+    color:#052828;
 }
 
+#nav a {
+    color:white;
+}
+
+#nav a:hover{
+    color:#ac7165;
+}
 
 a:hover{
-    color: #967872;
-    /*padding: 4px 8px;
-    text-align: center;
-    display: inline-block;
-    font-size: 15px;*/
+    color: #052828;
+    font-size: 17px;
     transition-duration: 0.7s;
-    }
-
+}
 
 .hide{
     display: none;
@@ -88,7 +91,9 @@ a:hover{
 
 #nav {
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: hsl(0, 0%, 0%, .5) 2px 2px 4px 4px;
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,0.9612438725490196) 0%, rgba(15,47,46,1) 30%, rgba(3,19,15,1) 100%);
     padding: 20px 20px;
@@ -99,11 +104,11 @@ img {
     box-shadow: hsl(0, 0%, 0%, .5) 2px 2px 4px 4px;
 }
 
-#footer {/*only applies to the element with an ID of 'footer'*/
+
+#footer {
     text-align:center;
     font-size: 16px;
     border-radius: 5px;
-    padding: 10px;
-    /*background-color:#55575756;*/
-    }
+    padding: 5px;
+}
 
