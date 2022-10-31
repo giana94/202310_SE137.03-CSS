@@ -18,12 +18,12 @@ body{
     /*grid-template-columns: 100px auto 100px;*/
     grid-template-areas:"header  header  header  header  header"
                         "bio     bio     bio     bio     bio"
-                        "hobbies hobbies hobbies hobbies ed"
+                        "hobbies hobbies hobbies midgrid ed"
                         "footer  footer  footer  footer  footer";
 
     /*grid-template-rows: 50px 50px 60px 50px;*/
 
-    grid-gap:0 12px;
+    grid-gap:0 0px;
     height:100%;
 }
 .parallax {
@@ -34,64 +34,85 @@ body{
     background-color: #a9b1a9;
 }
 body{
-    background-image: url("images/green_leaves.jpg");
+    background-image:url("images/green_leaves.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
 }
+
 #header{
+    background-color:rgba(0, 0, 0, 0.562);
     grid-area: header;
     text-align:center;
-    position: sticky;
-    font-family: 'Tangerine', serif;
     color: white;
-    font-size: 60px;
-    text-shadow: rgb(142, 142, 139);
-
+    margin: 1px;
+    padding:15px;
+    position: sticky;
+    border-radius: 50px 0px 50px 0px;
 }
 
+h1{
+    font-family: 'Tangerine', serif;
+    font-size: 60px;
+    text-decoration: underline double 2px rgb(133, 101, 21);
+}
+
+
 #bio{
-    background-color: #b5b3a73a;
+    background-color:rgba(0,0,0,0.5);
     grid-area: bio;
-    margin: 15px;
     padding: 15px;
+    margin: 7px;
     color:white;
+    border-radius: 50px 0px 50px 0px;
 }
 
 #hobbies{
-    background-color: #b5b3a73a;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50px 0px 0px 0px;
     grid-area: hobbies;
-    margin: 15px;
-    padding: 15px;
     color:white;
+    padding: 15px;
 }
-
 
 #ed{
     color:white;
-    background-color: #b5b3a73a;
+    background-color: rgba(0,0,0,0.5);
     grid-area: ed;
-    margin: 15px;
+    margin:7px;
     padding: 15px;
+    border-radius: 50px 0px 50px 0px;
     
 }
 
 #footer{
-    background-color: rgb(39, 39, 33);
+    background-color: rgba(0, 0, 0, 0.562);
     grid-area: footer;
     text-align:center;
     position: sticky;
     color:white;
+    padding: 15px;
+    
 }
 
 
 h2{
-    background-color:rgb(3, 29, 11);
-    color: rgb(255, 252, 246);
-    border: double 5px;
+    background: rgb(15,41,4);
+    background: linear-gradient(0deg, rgba(15,41,4,1) 0%, rgba(28,46,17,1) 0%, rgba(27,47,16,0.9332326680672269) 16%, rgba(2,17,2,0.8800113795518207) 100%);
+    border-bottom: double 5px;
     border-color: rgb(133, 101, 21);
-    border-color: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(241,229,183,1) 0%, rgba(34,56,34,0.8800113795518207) 100%);
     padding: 15px;
-    text-align:center;
+    text-align:left;
     font-family: 'Tangerine', serif;
     font-size: 30px;
+    border-radius: 50px 0px 50px 0px;
+}
+
+#midgrid{
+    background-color: rgba(0,0,0,0.5);
+    grid-area: midgrid;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    border-radius: 0px 0px 50px 0px;
+
 }
