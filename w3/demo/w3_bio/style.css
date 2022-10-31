@@ -105,11 +105,10 @@ h2{
     font-size: 30px;
     border-radius: 50px 0px 50px 0px;
 }
-
 #midgrid{
-    background-color: rgba(0,0,0,0.5);
-    grid-area: hobbies;
-    text-align: right;
+
+    grid-area: hobbies /4;
+    text-align: center;
     padding: 15px;
     border-radius: 5px;
     border-radius: 0px 0px 50px 0px;
