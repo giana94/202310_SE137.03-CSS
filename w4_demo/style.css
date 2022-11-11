@@ -1,11 +1,27 @@
+*{
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
 header{
     background-color: lightseagreen;
     display: flex;
     height: 200px;
     justify-content: flex-end;
     align-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
 }
 
+
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 80%;
+}
 h1{
     background-color: lightpink;
     padding:0;
@@ -18,4 +34,8 @@ nav{
 
 a:link, a:visited, a:active{
     background-color: rgb(222, 200, 222);
+}
+
+section{
+    height:100%;
 }

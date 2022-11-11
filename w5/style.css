@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Teko");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Rock Salt");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+
+html{
+    height: 100%;
+}
+
+body{ 
+    min-height: 100%;
+    background-color: #282828;
+    display: grid;
+    grid-template-areas:"head head head head head"
+                        "banner banner banner banner farr"
+                        "left1 left1 right1 right1 farr"
+                        "foot foot foot foot foot";
+} 
+
+
+header{
+    grid-area: head;
+    background-color: #070707;
+    display: flexbox;
+}
+
+h1{
+    color:#BB0908;
+    font-family: 'Teko';
+    font-weight: 400;
+    
+}
+
+#banner{
+    grid-area: banner;
+    display: flexbox;
+    background-image: url(f13_images/banner.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+#leftmod{
+    grid-area: left1;
+    display: flexbox;
+    background-color: #393939;
+    border-top: #BB0908 solid 5px;
+    align-self: auto;
+}
+
+
+#rightmod{
+    grid-area: right1;
+    display: flexbox;
+    background-color: #393939;
+    border-top: #BB0908 solid 5px;
+}
+
+#farright{
+    grid-area:farr;
+    display: flexbox;
+    background-color: #393939;
+}
+
+footer{
+    grid-area:foot;
+    display: flexbox;
+    background-color: #070707;
+}
+
+
+
