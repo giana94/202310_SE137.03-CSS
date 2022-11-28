@@ -1,0 +1,99 @@
+html, body{
+    margin:0;
+    height:100%;
+}
+body{
+    box-sizing:border-box;
+    display:flex;
+    justify-content: center;
+    align-items: stretch;
+}
+main{
+    width:100%;
+    background-color:#060606;
+    display:flex;
+    flex-direction: column;
+}
+header{
+    background-color: #505050;
+    height:24px;
+    color: #E3E3E3;
+}
+section{
+    height:100%;
+    background-color:burlywood;
+    display:flex;
+    justify-content: flex-start;
+}
+aside{
+    width:50px;
+    background-color:#505050;
+}
+nav{
+
+    width:150px;
+    background-color:#373737;
+    transition:width 1s;
+    display:flex;
+    justify-content: flex-end;
+    overflow:hidden;
+}
+details{
+    margin:5px;
+    width:90px;
+}
+summary{
+    width:90px;
+    color: #FFFFFF;
+}
+#content{
+    width:100%;
+    background-color:rgb(255, 179, 255);
+    display:flex;
+    flex-direction: column;
+}
+    #tabs{
+        background-color: #060606;
+        display:flex;
+    }
+        #tabs a{
+            width:173px;
+            height:34px;
+            display:inline-block;
+            color: #C2C2C2;
+        }
+        #tabs a:link, #tabs a:visited{
+            background-color:#373737;
+
+        }
+        #tabs a:hover, #tabs a:active{
+            background-color: #161616;
+        }
+    #breadcrumbs{
+        background-color: #161616;
+        color: #C2C2C2;
+    }
+    #breadcrumbs a{
+        color: #0058A9;
+    }
+
+    textarea{
+        resize:none;
+        width:100%;
+        height:100%;
+        box-sizing: border-box;
+        border:none;
+        outline:none;
+        background-color:black;
+        color:white;
+    }
+footer{
+    height:16px;
+    background-color:#0254A0;
+}
+
+.hidden{
+    width:0;
+    padding:0;
+    transition:width 1s;
+}

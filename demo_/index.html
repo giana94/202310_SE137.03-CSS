@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Software Layout</title>
+</head>
+<body>
+    <main>
+        <header>
+            File
+            Edit
+            Help
+        </header>
+        <section>
+            <aside>
+                <a href="#" id="tray">></a>
+            </aside>
+            <nav>
+                <details>
+                    <summary>Files</summary>
+                    <ul>
+                        <li>Words</li>
+                        <li>Words</li>
+                        <li>Words</li>
+                    </ul>
+                </details>
+            </nav>
+            
+            <div id="content">
+                <div id="tabs">
+                    <a href="#">
+                        Tab 1
+                    </a>
+                    <a href="#">
+                        Tab 2
+                    </a>
+                    <a href="#">
+                        Tab 3
+                    </a>
+                </div>
+                <div id="breadcrumbs">
+                    <a href="#">SE 137</a> >
+                    <a href="#">Week 6</a> >
+                    <a href="#">Homework</a> >
+                    <a href="#">Tab 1</a>
+                </div>
+                <textarea></textarea>
+            </div>
+        </section>
+        <footer></footer>
+    </main>
+    <script >
+
+        var bars = document.querySelector(`#tray`);
+        bars.addEventListener(`click`, (e)=>{
+            e.preventDefault();
+            var section = document.querySelector(`nav`).classList.toggle(`hidden`);
+            console.log(section)
+        })
+
+
+    </script>
+</body>
+</html>
