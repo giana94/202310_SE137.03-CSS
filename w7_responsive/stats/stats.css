@@ -1,0 +1,107 @@
+html, body{
+    margin:0;
+    height:100vh;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F2F2F2;
+}
+table{
+    width:80%;
+    border-collapse: collapse;
+}
+td{
+    border-bottom:1px solid black;
+}
+h1{
+    font-family:Impact;
+    color:#24393d;
+    letter-spacing: 1px;
+}
+thead
+{
+    color:rgb(251, 246, 240);
+    background-color: #6a8a91;
+    font-family:Verdana;
+}
+
+
+
+@media (max-width:1920px){
+    body{
+        transition: all 1s;
+    }
+    h1{
+        font-size: 1.5em;
+    }
+    thead{
+        font-size: 1em;
+    }
+    tbody{
+        font-size:1em;
+    }
+    tr:last-of-type{
+        display:none;
+    }
+    tr:nth-child(even) {
+        background-color: #b9cdd2b5;
+    }
+    /*The table head will display the full names for each column*/
+}   
+
+@media (max-width: 1000px){
+    body{
+        transition: all 1s;
+    }
+    h1{
+        font-size: 1.5em;
+    }
+    thead{
+        font-size: 1em;
+    }
+    tbody{
+        font-size:1em;
+    }
+    tr:last-of-type{
+        display:contents;
+    }
+    tr:first-of-type{
+        display:none;
+    }
+    tr:nth-child(even) {
+        background-color: #b9cdd2b5;
+    }
+    /*The column headers will show as abbreviations*/
+}
+
+
+@media (max-width: 500px){
+    body{
+        transition: all 1s;
+    }
+    h1{
+        font-size: 2em;
+    }
+    thead{
+        font-size: 1.5em;
+    }
+    tbody{
+        font-size:1.25em;
+    }
+    tr:first-child{
+        display:none;
+    }
+    tr:last-child{
+        display:contents;
+    }
+    .stat{
+        display:none;
+    }
+    tr:nth-child(even) {
+        background-color: #b9cdd2b5;
+    }
+    /*only the Name, Id, Avg and Tot columns will show
+(All the stat columns will be hidden)*/
+}
