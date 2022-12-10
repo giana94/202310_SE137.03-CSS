@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+
+/* Default height for small devices */
+#intro {
+    height: 200px;
+    background-size: cover;
+    text-shadow: #4f0869 1px 1px ;
+    font-family: 'Poppins';
+    
+}
+@media (min-width: 600px){
+    #intro {
+        transition: all 1s;
+        height: 400px;
+        background-size: cover;
+        }
+}
+
+  /* Height for devices larger than 992px */
+@media (min-width: 992px) {
+    #intro {
+    transition: all 1s;
+    height: 600px;
+    background-size: cover;
+    text-shadow: 1px 1px ;
+    }
+}
+
+.text-box a{
+    color:#8a7ac6;
+}
+
+.navbar-brand{
+    font-family: 'Poppins';
+    font-weight: 700;
+    color:rgb(228, 228, 228);
+}
+.navbar-brand:hover{
+    color:white;
+}
+.navbar{
+    background-color: rgb(182, 174, 214);
+}
+
+.navbar a{
+    color:rgb(228, 228, 228);
+}
+.navbar a:hover{
+    color:white;
+}
+
+
+.navbar-toggler{
+    border: 2px solid white;
+}
+
+.fa-brands{
+    color:rgb(228, 228, 228);
+    padding: 0.3em;
+    
+}
+.fa-brands:hover{
+    color:white;
+}
+
+#featuredCard{
+
+    border-bottom: 2px solid #8a7ac682;
+    
+
+}
