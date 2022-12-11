@@ -3,6 +3,7 @@
 
 /* Default height for small devices */
 #intro {
+    background-image: url(images/programming1.png);
     height: 200px;
     background-size: cover;
     text-shadow: #4f0869 1px 1px ;
@@ -65,9 +66,29 @@
 }
 
 #featuredCard{
-
     border-bottom: 2px solid #8a7ac682;
     
 }
 
+#projectButtons{
+    display: flex;
+    justify-content: space-between;
+}
+#projectButtons1{
+    display: flex;
+    justify-content: space-evenly;
+    margin:5px;
+    color:#8a7ac6;
+}
+#projectButtons1 :hover{
+    text-decoration: none;
+    color:#4f0869;
+}
 
+.card a{
+    color:#8a7ac6;
+}
+.card a:hover{
+    text-decoration: none;
+    color:#4f0869;
+}
