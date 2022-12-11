@@ -2,14 +2,29 @@
 
 
 /* Default height for small devices */
-#intro {
-    background-image: url(images/programming1.png);
-    height: 200px;
-    background-size: cover;
-    text-shadow: #4f0869 1px 1px ;
-    font-family: 'Poppins';
-    
+
+.jumbotron-fluid{
+    background-image: url(images/purple.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:#270334;
+    height:450px;
+    font-family:'Poppins';
+    opacity: 0.8;
 }
+
+.lead{
+    font-family:'Poppins';
+    font-weight:100;
+    margin-top:-10px;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 @media (min-width: 600px){
     #intro {
         transition: all 1s;
@@ -92,3 +107,4 @@
     text-decoration: none;
     color:#4f0869;
 }
+
