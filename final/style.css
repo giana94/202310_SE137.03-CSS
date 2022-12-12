@@ -3,17 +3,18 @@
 
 /* Default height for small devices */
 
-.jumbotron-fluid{
-    background-image: url(images/purple.jpg);
+.jumbotron{
+    background-image: url(images/banner.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
     color:#270334;
     height:450px;
     font-family:'Poppins';
-    opacity: 0.8;
 }
 
 .lead{
+    opacity: 1;
     font-family:'Poppins';
     font-weight:100;
     margin-top:-10px;
@@ -50,7 +51,7 @@
 .navbar-brand{
     font-family: 'Poppins';
     font-weight: 700;
-    color:rgb(228, 228, 228);
+    color:#e4e4e4;
 }
 .navbar-brand:hover{
     color:white;
@@ -72,7 +73,7 @@
 }
 
 .fa-brands{
-    color:rgb(228, 228, 228);
+    color:#e4e4e4;
     padding: 0.3em;
     
 }
@@ -108,3 +109,6 @@
     color:#4f0869;
 }
 
+.card-body{
+    font-family: 'Poppins';
+}
